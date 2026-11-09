@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crear cuenta | SAGI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <div class="contenedor">
+            <a class="logo" href="index.html" aria-label="SAGI, ir al inicio">SA<span>GI</span></a>
+            <nav aria-label="Principal">
+                <ul class="menu">
+                    <li><a href="index.html">Casas en venta</a></li>
+                    <li><a href="registro.html" aria-current="page">Crear cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="contenedor">
+        <form class="formulario panel" action="#" novalidate aria-labelledby="titulo-registro">
+            <h1 id="titulo-registro">Crear cuenta</h1>
+            <p class="ayuda" style="margin-bottom:1.25rem">Todos los campos son obligatorios.</p>
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo electr&oacute;nico</label>
+                <input id="correo" name="correo" type="email" autocomplete="email"
+                    aria-describedby="ayuda-correo error-correo" aria-invalid="true" required>
+                <p class="ayuda" id="ayuda-correo">Ejemplo: nombre@correo.com</p>
+                <p class="error" id="error-correo">Escribe un correo v&aacute;lido, por ejemplo nombre@correo.com.</p>
+            </div>
+            <div class="campo">
+                <label for="telefono">Tel&eacute;fono</label>
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="campo">
+                <label for="clave">Contrase&ntilde;a</label>
+                <input id="clave" name="clave" type="password" autocomplete="new-password" minlength="8"
+                    aria-describedby="ayuda-clave" required>
+                <p class="ayuda" id="ayuda-clave">M&iacute;nimo 8 caracteres, con una letra y un n&uacute;mero.</p>
+            </div>
+            <div class="check">
+                <input id="ver" type="checkbox">
+                <label for="ver" style="font-weight:400">Mostrar contrase&ntilde;a</label>
+            </div>
+            <div class="check">
+                <input id="terminos" name="terminos" type="checkbox" required>
+                <label for="terminos" style="font-weight:400">Acepto los <a href="#">t&eacute;rminos y el aviso de
+                        privacidad</a></label>
+            </div>
+            <button class="boton boton--ancho" type="submit">Crear cuenta</button>
+            <p style="text-align:center;margin:1rem 0 0">&iquest;Ya tienes cuenta? <a href="#">Iniciar sesi&oacute;n</a>
+            </p>
+        </form>
+    </main>
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy; 2026 SAGI. Compra de casas con acompa&ntilde;amiento. Contacto: <a
+                    href="mailto:contacto@sagi.example">contacto@sagi.example</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

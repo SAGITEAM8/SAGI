@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casas en venta | SAGI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <div class="contenedor">
+            <a class="logo" href="index.html" aria-label="SAGI, ir al inicio">SA<span>GI</span></a>
+            <nav aria-label="Principal">
+                <ul class="menu">
+                    <li><a href="index.html" aria-current="page">Casas en venta</a></li>
+                    <li><a href="registro.html">Crear cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido">
+        <section class="portada">
+            <div class="contenedor">
+                <h1>Encuentra la casa para tu familia</h1>
+                <p>Revisa precios, ubicaci&oacute;n y caracter&iacute;sticas de cada casa antes de decidir.</p>
+                <form class="filtros" aria-label="Filtrar casas">
+                    <div class="campo"><label for="ciudad">Ciudad</label>
+                        <select id="ciudad">
+                            <option>Todas</option>
+                            <option>Guadalajara</option>
+                            <option>Monterrey</option>
+                            <option>Quer&eacute;taro</option>
+                        </select>
+                    </div>
+                    <div class="campo"><label for="precio">Precio m&aacute;ximo</label>
+                        <select id="precio">
+                            <option>Sin l&iacute;mite</option>
+                            <option>$2,000,000</option>
+                            <option>$3,500,000</option>
+                            <option>$5,000,000</option>
+                        </select>
+                    </div>
+                    <div class="campo"><label for="rec">Rec&aacute;maras</label>
+                        <select id="rec">
+                            <option>Cualquiera</option>
+                            <option>2 o m&aacute;s</option>
+                            <option>3 o m&aacute;s</option>
+                            <option>4 o m&aacute;s</option>
+                        </select>
+                    </div>
+                    <button class="boton" type="submit">Buscar casas</button>
+                </form>
+            </div>
+        </section>
+        <section class="seccion contenedor" aria-labelledby="titulo-lista">
+            <h2 id="titulo-lista">Casas disponibles</h2>
+            <p class="ayuda">Mostrando 6 casas</p>
+            <ul class="rejilla">
+                <li>
+                    <article class="tarjeta">
+                        <div class="foto " role="img" aria-label="Ilustraci&oacute;n de Casa Los Pinos"></div>
+                        <div class="tarjeta__cuerpo">
+                            <h3>Casa Los Pinos</h3>
+                            <p class="precio">$2,450,000 MXN</p>
+                            <p class="ubicacion">Zapopan, Jalisco</p>
+                            <ul class="datos" aria-label="Caracter&iacute;sticas">
+                                <li>3 rec&aacute;maras</li>
+                                <li>2 ba&ntilde;os</li>
+                                <li>120 m&sup2;</li>
+                            </ul>
+                            <a class="boton" href="casa.html">Comprar<span class="solo-lectores"> Casa Los
+                                    Pinos</span></a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta">
+                        <div class="foto foto--b" role="img" aria-label="Ilustraci&oacute;n de Casa Jacarandas"></div>
+                        <div class="tarjeta__cuerpo">
+                            <h3>Casa Jacarandas</h3>
+                            <p class="precio">$3,180,000 MXN</p>
+                            <p class="ubicacion">San Pedro, Nuevo Le&oacute;n</p>
+                            <ul class="datos" aria-label="Caracter&iacute;sticas">
+                                <li>3 rec&aacute;maras</li>
+                                <li>3 ba&ntilde;os</li>
+                                <li>148 m&sup2;</li>
+                            </ul>
+                            <a class="boton" href="casa.html">Comprar<span class="solo-lectores"> Casa
+                                    Jacarandas</span></a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta">
+                        <div class="foto foto--c" role="img" aria-label="Ilustraci&oacute;n de Casa Alameda"></div>
+                        <div class="tarjeta__cuerpo">
+                            <h3>Casa Alameda</h3>
+                            <p class="precio">$1,890,000 MXN</p>
+                            <p class="ubicacion">Quer&eacute;taro, Quer&eacute;taro</p>
+                            <ul class="datos" aria-label="Caracter&iacute;sticas">
+                                <li>2 rec&aacute;maras</li>
+                                <li>1 ba&ntilde;os</li>
+                                <li>85 m&sup2;</li>
+                            </ul>
+                            <a class="boton" href="casa.html">Comprar<span class="solo-lectores"> Casa
+                                    Alameda</span></a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta">
+                        <div class="foto " role="img" aria-label="Ilustraci&oacute;n de Casa del Lago"></div>
+                        <div class="tarjeta__cuerpo">
+                            <h3>Casa del Lago</h3>
+                            <p class="precio">$4,750,000 MXN</p>
+                            <p class="ubicacion">Tlajomulco, Jalisco</p>
+                            <ul class="datos" aria-label="Caracter&iacute;sticas">
+                                <li>4 rec&aacute;maras</li>
+                                <li>3 ba&ntilde;os</li>
+                                <li>210 m&sup2;</li>
+                            </ul>
+                            <a class="boton" href="casa.html">Comprar<span class="solo-lectores"> Casa del
+                                    Lago</span></a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta">
+                        <div class="foto foto--b" role="img" aria-label="Ilustraci&oacute;n de Casa Olivos"></div>
+                        <div class="tarjeta__cuerpo">
+                            <h3>Casa Olivos</h3>
+                            <p class="precio">$2,990,000 MXN</p>
+                            <p class="ubicacion">Apodaca, Nuevo Le&oacute;n</p>
+                            <ul class="datos" aria-label="Caracter&iacute;sticas">
+                                <li>3 rec&aacute;maras</li>
+                                <li>2 ba&ntilde;os</li>
+                                <li>132 m&sup2;</li>
+                            </ul>
+                            <a class="boton" href="casa.html">Comprar<span class="solo-lectores"> Casa Olivos</span></a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta">
+                        <div class="foto foto--c" role="img" aria-label="Ilustraci&oacute;n de Casa Mirador"></div>
+                        <div class="tarjeta__cuerpo">
+                            <h3>Casa Mirador</h3>
+                            <p class="precio">$3,650,000 MXN</p>
+                            <p class="ubicacion">El Marqu&eacute;s, Quer&eacute;taro</p>
+                            <ul class="datos" aria-label="Caracter&iacute;sticas">
+                                <li>4 rec&aacute;maras</li>
+                                <li>2 ba&ntilde;os</li>
+                                <li>175 m&sup2;</li>
+                            </ul>
+                            <a class="boton" href="casa.html">Comprar<span class="solo-lectores"> Casa
+                                    Mirador</span></a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy; 2026 SAGI. Compra de casas con acompa&ntilde;amiento. Contacto: <a
+                    href="mailto:contacto@sagi.example">contacto@sagi.example</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
